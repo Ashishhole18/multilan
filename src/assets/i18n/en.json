@@ -1,0 +1,13 @@
+{
+  "HOME":{
+    "TITLE":"Hello Welcome to Internationalization.",
+    "TEXT":"This is demo not original App.",
+    "SELECT":"Select Language",
+    "MENU":{
+      "HOME":"Home",
+      "ABOUT":"About",
+      "SERVICES":"Services",
+      "ACCOUNT":"Account"
+    }
+  }
+}
