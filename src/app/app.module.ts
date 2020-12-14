@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClient,HttpClientModule} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import { NguiMapModule} from '@ngui/map';
+import { DemoMaterialModule} from './material-module';
+import { StarratingComponent } from './starrating/starrating.component';
+import { RatingModule } from 'ng-starrating';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StarratingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyDZERCrCxsi_i4-WVNxclrOE3e6f_CNZBg'}),
+    DemoMaterialModule,
+    RatingModule,
     TranslateModule.forRoot({
       loader:{
 
@@ -23,7 +28,8 @@ import { NguiMapModule} from '@ngui/map';
         deps:[HttpClient]
       }
 
-    })
+    }),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

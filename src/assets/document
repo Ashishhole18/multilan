@@ -1,0 +1,6 @@
+LocalDate.now().plusMonths(1)
+
+		LocalDateTime startDate=LocalDateTime.now();
+		LocalDateTime endDate=LocalDateTime.now().plusMonths(6);
+		long days=Duration.between(startDate, endDate).toDays();
+		System.out.println(days);
