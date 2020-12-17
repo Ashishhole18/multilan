@@ -103,4 +103,57 @@
 <p class="body-2">
     Your rated <span class="body-2">{{rating}}</span> / <span class="body-2">{{starCount}}</span>
 </p>
+
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col">
+<mat-card style="flex-wrap: wrap;">
+  <mat-card-title>{{'MEMBERSHIP.MEMBERSHIPT2'|translate}}</mat-card-title>
+  <mat-divider></mat-divider>
+  <mat-list>
+    <h3 matSubheader>{{'MEMBERSHIP.BENEFITS'|translate}}</h3>
+    <mat-list-item>
+      <mat-icon matListAvatar>accessible</mat-icon>
+      <h4 matLine >{{'MEMBERSHIP.CONTENT.CONTENT1'|translate}}</h4>
+    </mat-list-item>
+    <mat-divider matInset></mat-divider>
+    <mat-list-item>
+      <mat-icon matListAvatar>network_wifi</mat-icon>
+      <h4 >{{'MEMBERSHIP.CONTENT.CONTENT3'|translate}}</h4>
+    </mat-list-item>
+    <mat-divider matInset></mat-divider>
+    <mat-list-item>
+      <mat-icon matListAvatar>airline_seat_recline_extra</mat-icon>
+      <h4 matLine>{{'MEMBERSHIP.CONTENT.CONTENT4'|translate}}</h4>
+    </mat-list-item>
+    <mat-divider matInset></mat-divider>
+    <mat-list-item>
+      <mat-icon matListAvatar>sentiment_satisfied_alt</mat-icon>
+      <h4 matLine>{{'MEMBERSHIP.CONTENT.CONTENT5'|translate}}</h4>
+    </mat-list-item>
+    <mat-divider matInset></mat-divider>
+    <mat-list-item>
+      <mat-icon matListAvatar>home_repair_service</mat-icon>
+      <h4 matLine>{{'MEMBERSHIP.CONTENT.CONTENT6'|translate}}</h4>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <h3 matSubheader>VALIDITY</h3>
+    <mat-list-item>
+      <mat-icon matListAvatar>schedule</mat-icon>
+      <h4 matLine>{{'MEMBERSHIP.CONTENT.CONTENT7'|translate}}</h4>
+    </mat-list-item>
+    <mat-divider matInset></mat-divider>
+  </mat-list>
+  <mat-divider></mat-divider>
+  <mat-card-actions>
+    <button mat-button color="accent" class="text-upper">Edit</button>
+  </mat-card-actions>
+</mat-card>
+</div>
+<div class="col"></div>
+<div class="col"></div>
+</div>
+</div>
+<app-dash></app-dash>
 <router-outlet></router-outlet>
