@@ -108,7 +108,7 @@
 <div class="container-fluid">
 <div class="row">
   <div class="col">
-<mat-card style="flex-wrap: wrap;">
+<mat-card >
   <mat-card-title>{{'MEMBERSHIP.MEMBERSHIPT2'|translate}}</mat-card-title>
   <mat-divider></mat-divider>
   <mat-list>
@@ -151,9 +151,81 @@
   </mat-card-actions>
 </mat-card>
 </div>
-<div class="col"></div>
+<div class="col">
+  <div class="col-sm text-center">
+    <div class="card m-2">
+      <mat-card >
+      <div class="card-body">
+        <h5 class="card-title text-info"><mat-card-title>{{'MEMBERSHIP.MEMBERSHIPT2'|translate}}</mat-card-title></h5>
+        <p class="card-text text-primary">{{'MEMBERSHIP.BENEFITS'|translate}}</p>
+      </div>
+      <ul class="list-group list-group-flush ">
+        <li class="list-group-item"><mat-list-item><mat-icon matListAvatar>accessible</mat-icon>
+          <h4 matLine >{{'MEMBERSHIP.CONTENT.CONTENT1'|translate}}</h4></mat-list-item></li>
+        <li class="list-group-item">{{'MEMBERSHIP.CONTENT.CONTENT7'|translate}}</li>
+        <li class="list-group-item">{{'MEMBERSHIP.CONTENT.CONTENT3'|translate}}</li>
+        <li class="list-group-item">{{'MEMBERSHIP.CONTENT.CONTENT4'|translate}}</li>
+        <li class="list-group-item">{{'MEMBERSHIP.CONTENT.CONTENT5'|translate}}</li>
+        <li class="list-group-item">{{'MEMBERSHIP.CONTENT.CONTENT6'|translate}}</li>
+      </ul>
+      <div class="card-body">
+        <button type="button" class="btn btn-primary btn-lg btn-block" (click)="getMembership()">BUY</button>
+      </div>
+    </mat-card>
+    </div>
+  </div>
+</div>
 <div class="col"></div>
 </div>
 </div>
+
+<div class="container">
+  <div class="card">
+    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+      <img
+        src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+        class="img-fluid"
+      />
+      <a href="#!">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk of the
+        card's content.
+      </p>
+      <a href="#!" class="btn btn-primary">Button</a>
+    </div>
+  </div>
+</div>
+
 <app-dash></app-dash>
+<app-myrating></app-myrating>
+<div class="container-fluid">
+
+
+<div class="row">
+
+  <div class="col-4 col-xs-4">
+    <img src="https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg" alt="no image">
+
+  </div>
+  <div class="col-8 col-xs-12">
+    <mat-list>
+      <div class="row">
+        <div class="col">
+      <mat-list-item *ngFor="let d of data">
+        {{d.title}}
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </div>
+    </div>
+
+     </mat-list>
+  </div>
+</div>
+</div>
+
 <router-outlet></router-outlet>
